@@ -190,6 +190,6 @@ module Monitor = struct
   let cmd = Cmdliner.Cmd.v info term
 end
 
-let info = Cmdliner.Cmd.info "dune-health"
+let info = Cmdliner.Cmd.info "opam-repo-ci-diff"
 let cmd = Cmdliner.Cmd.group info [ Import.cmd; Diff.cmd; Monitor.cmd ]
 let () = Cmdliner.Cmd.eval cmd |> Stdlib.exit

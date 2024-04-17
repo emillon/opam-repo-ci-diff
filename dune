@@ -1,0 +1,4 @@
+(executable
+ (name orcd)
+ (public_name opam-repo-ci-diff)
+ (libraries cmdliner curly lambdasoup re))
